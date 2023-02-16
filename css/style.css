@@ -1,0 +1,198 @@
+/* ===============general=============== */
+:root {
+  --main-color: #19283f;
+  --second-color: #33d1cc;
+  --yellow-color: #ffc400;
+  --pink-color: #ff3150;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+.main-btn {
+  background-color: var(--pink-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  background-color: #ff315050;
+  color: var(--yellow-color);
+}
+.main-title::after {
+  position: absolute;
+  content: "";
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7.5rem;
+  height: 0.1875rem;
+  background-color: var(--second-color);
+}
+/* ===============start nav bar=============== */
+nav {
+  background-color: var(--main-color);
+}
+nav .nav-item a {
+  color: white;
+}
+nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+nav .nav-link:focus {
+  color: var(--second-color);
+}
+nav .search {
+  color: var(--second-color);
+  border-left: 1px solid var(--second-color);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+span.navbar-toggler-icon {
+  color: white;
+}
+
+/* ===============end nav bar=============== */
+
+/* ================start head=============== */
+header {
+  background-color: #19283f;
+  min-height: 100vh;
+}
+/* =================end head================ */
+
+/* ================start section 1 features============= */
+#services .icon-holder {
+  min-height: 12.5rem;
+}
+#services .icon-holder .number {
+  color: #33d1cc50;
+}
+#services .icon-holder .icon {
+  color: var(--second-color);
+}
+#services .icon-holder svg {
+  left: 50%;
+  transform: translate(-50%);
+}
+#services .item h3 {
+  color: var(--yellow-color);
+}
+/* ================end section 1 features=============== */
+
+/* ================start section 2 portfolio============= */
+#porfolio {
+  background-color: #eff7fa;
+}
+#porfolio nav .nav-item a {
+  color: black;
+}
+#porfolio .nav-tabs .active {
+  color: var(--yellow-color);
+  background-color: var(--pink-color);
+  border: hidden 1px;
+  border-radius: 50%;
+  padding: 10px 15px;
+}
+#porfolio .nav-tabs .nav-link:not(button.active) {
+  color: black;
+}
+#porfolio .nav-tabs .nav-link:hover:not(button.active) {
+  color: var(--pink-color);
+}
+#porfolio .nav-tabs {
+  border-bottom: hidden;
+}
+#porfolio .item {
+  position: relative;
+  overflow: hidden;
+}
+#porfolio .item::before {
+  content: "Application";
+  background-color: #33d1cc7b;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 1s;
+}
+#porfolio .item:hover::before {
+  transform: translateX(0);
+}
+/* ================end section 2 portfolio=============== */
+
+/* ================start section 4 contact============= */
+#contact {
+  background-color: #eff7fa;
+}
+#contact h2 {
+  color: var(--yellow-color);
+  font-weight: 600;
+}
+#contact .card-body {
+  background-color: var(--second-color);
+}
+/* ================end section 4 contact============= */
+
+/* ================start section 5 ============= */
+.project {
+  background-color: var(--main-color);
+}
+/* ================end section 5 =============== */
+/* ================start section 7 ============= */
+#subscribe {
+  background-color: var(--yellow-color);
+}
+#subscribe input {
+  border: none;
+  border-bottom: solid 1px white;
+  background-color: transparent;
+  width: 50%;
+}
+#subscribe .sub:focus {
+  outline: none;
+}
+#subscribe .sub::placeholder {
+  color: white;
+}
+#subscribe a {
+  background-color: var(--main-color);
+  color: var(--yellow-color);
+}
+/* ================end section 7 =============== */
+/* ================start footer ============= */
+footer {
+  background-color: var(--main-color);
+}
+footer p {
+  color: gray;
+}
+footer .icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .icons a.f {
+  background-color: #1877f2;
+}
+footer .icons .t {
+  background-color: #1da1f2;
+}
+footer .icons .l {
+  background-color: #0077b5;
+}
+footer .icons .y {
+  background-color: #ff0000;
+}
+/* ================end footer =============== */
